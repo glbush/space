@@ -1,0 +1,22 @@
+html {
+	background-color: black;
+	color: white;
+}
+
+body {
+	margin: 32px;
+}
+
+#X_Table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+#X_Table td {
+	width: 32px;
+	height: 32px;
+	padding: 0px;
+	text-align: center;
+	border: 1px solid gray;	
+}

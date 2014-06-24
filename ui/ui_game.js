@@ -47,13 +47,21 @@ UI_Game.prototype.render = function(galaxyNumber) {
 		// append cells
 		for (var c = 0, cMax = X.galaxySize; c < cMax; c++) {
 			
+			// get class
+			var cssClass = '';
+			var SS = X.M[r][c];
+			if (SS) {
+				cssClass = SS.S.type.color + "_" + SS.S.type.size;
+			}
+			
 			// append cell
 			var $td = $('<td/>', {
-				id: 'X_Cell_' + r + '_' + c
+				id: 'X_Cell_' + r + '_' + c,
+				"class" : cssClass
 			}).appendTo($row);
 			
 			// populate cell
-			$td.html(X.M[r][c] ? 'x' : '&nbsp;');
+			$td.html(X.M[r][c] ? '*' : '&nbsp;');			
 			
 		}
 	

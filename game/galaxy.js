@@ -23,7 +23,10 @@ function Galaxy(args) {
 		
 		// determine if there is a star system
 		for (var c = 0, cMax = X.galaxySize; c < cMax; c++) {
-			X.M[r][c] = X[X.galaxyType + "HasStar"](r, c);
+			var hasStar = X[X.galaxyType + "HasStar"](r, c);
+			if (hasStar) {
+				X.M[r][c] = new StarSystem(args);
+			}
 		}
 		
 	}

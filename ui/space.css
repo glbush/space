@@ -1,3 +1,6 @@
+/*
+ * MAIN
+ */
 html {
 	background-color: black;
 	color: white;
@@ -7,10 +10,26 @@ body {
 	margin: 32px;
 }
 
+/*
+ * MAP
+ */
 #X_Table {
+	
+	/* table layout */
 	border-spacing: 0px;
 	border-collapse: collapse;
 	table-layout: fixed;
+	
+	/* cursor */
+	cursor: crosshair;
+	
+	/* don't allow text select */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 #X_Table td {
@@ -18,5 +37,129 @@ body {
 	height: 32px;
 	padding: 0px;
 	text-align: center;
-	border: 1px solid gray;	
+	vertical-align: middle;
+	border: 1px solid #202020;
+}
+
+/*
+ * STARS
+ */
+.blue_1 {
+	color: darkcyan;
+	font-size: 6pt;
+}
+
+.blue_2 {
+	color: darkcyan;
+	font-size: 8pt;
+}
+
+.blue_3 {
+	color: darkcyan;
+	font-size: 10pt;
+}
+
+.blue_4 {
+	color: darkcyan;
+	font-size: 20pt;
+}
+
+.brown_1 {
+	color: brown;
+	font-size: 6pt;
+}
+
+.brown_2 {
+	color: brown;
+	font-size: 8pt;
+}
+
+.brown_3 {
+	color: brown;
+	font-size: 10pt;
+}
+
+.brown_4 {
+	color: brown;
+	font-size: 20pt;
+}
+
+.orange_1 {
+	color: orange;
+	font-size: 6pt;
+}
+
+.orange_2 {
+	color: orange;
+	font-size: 8pt;
+}
+
+.orange_3 {
+	color: orange;
+	font-size: 10pt;
+}
+
+.orange_4 {
+	color: orange;
+	font-size: 20pt;
+}
+
+.red_1 {
+	color: red;
+	font-size: 6pt;
+}
+
+.red_2 {
+	color: red;
+	font-size: 8pt;
+}
+
+.red_3 {
+	color: red;
+	font-size: 10pt;
+}
+
+.red_4 {
+	color: red;
+	font-size: 20pt;
+}
+
+.white_1 {
+	color: white;
+	font-size: 6pt;
+}
+
+.white_2 {
+	color: white;
+	font-size: 8pt;
+}
+
+.white_3 {
+	color: white;
+	font-size: 10pt;
+}
+
+.white_4 {
+	color: white;
+	font-size: 20pt;
+}
+
+.yellow_1 {
+	color: yellow;
+	font-size: 6pt;
+}
+
+.yellow_2 {
+	color: yellow;
+	font-size: 8pt;
+}
+
+.yellow_3 {
+	color: yellow;
+	font-size: 10pt;
+}
+
+.yellow_4 {
+	color: yellow;
+	font-size: 20pt;
 }
